@@ -7,8 +7,8 @@ const chalk = require('chalk');
 let today = moment().dayOfYear(Number);
 console.log(`It is ${chalk.blue(today)}.`);
 
-let howLong = moment().dayOfYear(DDD);
-console.log(`${howLong}`)
+let howLong = moment().dayOfYear();
+console.log(`It is the ${chalk.green(howLong)}th day the of year.`)
 
 let seconds = moment().milliseconds();
 console.log(`It is ${chalk.blue(seconds * 1000)} seconds into the day.`);
